@@ -26,3 +26,9 @@ class BankAccount:
     def get_balance(self):
         print(f'Your balance is: ${self.balance}')
         return self.balance
+
+    def add_interest(self):
+        if self.balance > 0:
+            interest = (self.balance * 0.00083)
+            self.balance += interest
+            self.balance = round(self.balance, 2)
