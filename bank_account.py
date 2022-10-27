@@ -22,3 +22,7 @@ class BankAccount:
             print(f'Insufficient funds. You will be charged a $10 overdraft fee.')
         else:
             print(f'Amount withdrawn: ${amount}. New balance: ${self.balance}')
+
+    def get_balance(self):
+        print(f'Your balance is: ${self.balance}')
+        return self.balance
